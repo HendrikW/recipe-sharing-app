@@ -1,0 +1,776 @@
+/* rgb(201, 217, 143) #c9d98f	hellgrün */
+/* rgb(242, 242, 242) #f2f2f2 hellgrau */
+/* rgb(165, 191, 69) #a5bf45	mittelgrün <-- */
+/* rgb(104, 140, 50) #688c32	dunkleres grün hauptgrün <-- */ 
+/* rgb(83, 115, 50) #537332	noch dunkleres grün */
+
+/* Fonts:
+Bodoni FLF
+font-family: Arial,Tahoma,sans-serif
+*/
+
+/*
+Referenz-Seiten:
+hellofresh.de
+https://marleyspoon.de/
+https://www.chefkoch.de/
+https://www.kptncook.com/
+https://www.100affen.de/
+
+*/
+
+h1 {
+  display: table;
+  text-align: center; 
+text-decoration: underline #537332;
+font-family: "AlianzaSlab700", "Georgia", "Droid Serif", serif;
+padding-top: 35px;
+padding-bottom:15px;
+}
+
+
+
+h2,h3,h4,h5{
+  display: table;
+  text-align: center; 
+font-family: "AlianzaSlab700", "Georgia", "Droid Serif", serif;
+padding-top: 15px;
+padding-bottom:15px;
+}
+
+body {
+  font-family: Arial,Tahoma,sans-serif;
+  background-color: #f2f2f2;
+  font-weight: 400;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+ } 
+
+
+a {
+  color: #537332; }
+
+
+/* navbar   */
+.navbar {
+  /* margin-bottom: 35px; */
+  color:#537332 ;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  background-color: white;
+}
+
+.btn my-2 my-sm-0 {
+  color:#537332
+}
+.navbar .btn {
+  border:1px solid #537332;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#537332;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color:#c9d98f;
+  
+}
+
+.logo {
+  /* width: 250px; */
+  margin-right: 10px;
+
+}
+
+/* index-page */
+
+
+.home-hero {
+  background-image: url("../images/spaghetti.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  min-height: 650px;
+
+  
+}
+
+.home-headline {
+  box-sizing: border-box;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  color: white;
+}
+
+
+
+.home-headline p {
+  font-size:21px;
+  margin:0px;
+  padding:0px;
+  text-align: center;
+}
+
+.home-headline h1 {
+  margin:0px;
+  padding:0px;
+  font-size:60px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sign-up {
+  background-color: white;
+  padding-top: 20px;
+  height: 350px;
+}
+
+.sign-up h4 {
+  font-size:35px;
+text-decoration: underline #537332;
+font-family: "AlianzaSlab700", "Georgia", "Droid Serif", serif;
+padding-bottom:30px;
+text-align: center;
+display: grid;
+
+
+}
+
+#home-signup-section {
+  padding-bottom: 60px;
+  background-color:white;
+}
+
+.sign-up-header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+#signup-process {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex: 1 1 0%;
+  display: flex;
+}
+
+#signup-steps {
+  flex: 1 1 0%;
+  text-align: center;
+}
+
+h6 {
+  margin-top: 20px;
+  font-weight: 600;}
+
+#home-signup {
+padding-top: 34px;
+text-align: center;
+}
+
+
+#btn-home-signup {
+/* color:#537332;
+border: 1px solid #537332;
+justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right:auto;
+  margin-left:auto;
+  width: 100%;
+  height: 50px;
+  text-align: center; */
+
+  background-color: #537332;
+  color: white;
+  justify-content: center;
+  padding: 15px 50px;
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+
+/* signup/login */
+.form-inline {
+  margin-right: 10px;
+}
+
+#signup-form{
+
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 100px
+    
+}
+
+#signup-box{
+
+  width: 470px;
+  padding: 20px 18px;
+  border-left: 4px solid #537332;
+  border-right: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-radius: 5px;
+  line-height: 1.5;
+  background-color: white
+
+}
+
+body.signup .navbar {
+  visibility:hidden; 
+  display:none;
+}
+
+#username, #password, #email{
+  width: 100%;
+  line-height: 1.5;
+  border-color: #bebebe;
+  height: 48px;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+
+}
+
+#input-text {
+  margin-bottom: 2px;
+}
+
+#btn-signup, #btn-form-login {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #537332;
+    color: white;
+    border-radius: 5px;
+padding: 0,75em;
+margin-top: 40px;
+    
+}
+
+#btn-register {
+  background-color: #537332;
+  color: white;
+}
+
+#btn-login {
+  color: #537332
+}
+
+
+
+
+
+/* recipe-overview-page  */
+
+#counter {
+  color: #716d6a
+}
+
+#level, #nutrition, #dishType {
+  border: 1px solid #476b2d;
+  border-radius: 1px;
+  height: 20px;
+
+}
+
+#level:hover {
+  background-color: #c9d98f;
+
+}
+
+#nutrition:hover {
+  background-color: #c9d98f;
+
+}
+#dishType:hover {
+  background-color: #c9d98f;
+
+}
+
+#btn-filter {
+  color: white;
+  background-color: #537332;
+  border-radius: 5px;
+  width: 70px;
+}
+
+#rezepte {
+}
+.recipe-card, .welcome-recipe-card {
+-webkit-font-smoothing: antialiased;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+background-color: #fff;
+position: relative;
+height: 360px;
+
+}
+
+.recipe-img, .welcome-recipe-img {
+  overflow: hidden;
+  width: 364px;
+ height: 200px;
+}
+
+.recipe-card img{
+  /* width: 100%;
+height: 150px;
+margin-bottom: 10px; */
+max-width: 100%;
+margin: auto;
+  display: block;
+ }
+
+ .welcome-recipe-card img{
+  /* width: 100%;
+height: 150px;
+margin-bottom: 10px; */
+max-width: 100%;
+margin: auto;
+  display: block;
+ }
+
+ .col-4 {
+  padding-bottom: 15px;
+  padding-right: 1px;
+ }
+
+ .recipe-text-field {
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: flex-start;
+    -webkit-box-pack: start;
+    height: 150px;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    align-items: flex-start;
+    -webkit-box-align: start;
+    position: relative;
+ }
+ .recipe-txt {
+   font-weight: bold;
+   
+   color: #343434;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin: 4px 0;
+
+ }
+
+ .recipe-duration, .recipe-level, .recipe-cuisine {
+  font-weight: 400;
+  line-height: 20px;  
+  padding: 0px;
+  margin:0px;
+ }
+
+ .recipe-duration > p {
+   padding: 0px;
+   padding-bottom:5px;
+   margin: 0px;
+
+ }
+
+ .recipe-level > p {
+  padding: 0px;
+  padding-bottom:5px;
+
+  margin: 0px;
+}
+
+.recipe-cuisine > p {
+  padding: 0px;
+  padding-bottom:5px;
+  margin: 0px;
+
+}
+
+.recipe-nutrition {
+ color: #537332;
+ background-color: #c9d98f;
+ display: inline-block;
+ text-transform: uppercase;
+ margin: 0px;
+ letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 5px;
+    font-size: 10px;
+    height: 25px;
+}
+
+.recipe-nutrition > p {
+  width: auto;
+}
+
+#last-paragraph {
+  padding-bottom: 100px;
+  color: #716d6a;
+}
+
+
+
+/* recipe detail page */
+
+.recipe-details {
+  width: 100%;
+  min-height: 1000px;
+  background-color: white;
+  padding: 30px 70px;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.recipe-details img {
+  width: 100%;
+  /* max-width:100%; */
+
+}
+
+
+.recipe-meta {
+  margin: 20px 0px;
+  box-sizing: border-box;
+}
+
+.recipe-meta > span {
+  padding: 10px 20px;
+  background: hsla(0,0%,84.7%,.3);
+  border-radius: 8px;
+}
+
+#detail-nutrition {
+  background-color: #c9d98f;
+  color: #537332
+}
+
+li {
+  list-style-type: none;
+}
+
+#btn-rec-det {
+  color: #537332;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+	outline: inherit;
+
+}
+
+#comment-h2{
+  padding-bottom:0px;
+}
+
+#comment-form {
+  padding-top:0px;
+  margin-top:0px
+}
+
+
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  border:1px solid #bbb9b9;
+}
+
+
+/* add-recipe-page / edit-recipe-page */
+
+.add-recipe, .edit-recipe {
+  width: 100%;
+  min-height: 1000px;
+  background-color: white;
+  padding: 30px 70px;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.add-recipe  h5 {
+  padding-bottom: 0px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+
+.edit-recipe  h5 {
+  padding-bottom: 0px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+
+#title {
+  width: 100%;
+  line-height: 1.5;
+  border-color: #bebebe;
+  height: 50px;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+}
+
+#portions {
+  line-height: 1.5;
+  border-color: #bebebe;
+  height: 50px;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+  width: 100px;
+}
+
+.add-recipe select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+#add-duration, #add-portions, #edit-duration, #edit-portions {
+  width: 100%;
+}
+
+#add-duration, #add-küche, #edit-duration, #edit-küche {
+  line-height: 1.5;
+  border-color: #bebebe;
+  height: 50px;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+}
+
+#add-level, #add-gericht, #add-nutrition, #edit-level, #edit-gericht, #edit-nutrition {
+  line-height: 1.5;
+  border-color: #bebebe;
+  height: 50px;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+  background-color: white;
+  width: 100%;
+  color: #716d6a;
+}
+
+#add-portions, #edit-portions {
+  line-height: 1.5;
+  border-color: #bebebe;
+  height: 50px;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+}
+
+
+.select-wrapper {
+  width: 300px;
+}
+.select-wrapper {
+  /* ... */
+  position: relative;
+}
+.select-wrapper::before {
+  font-family: fontello;
+  content: "\f107";
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #fff;
+}
+.select-wrapper::before {
+  /* ... */
+  pointer-events: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.add-recipe textarea {
+  line-height: 1.5;
+  border-color: #bebebe;
+  padding: 0 .75em;
+  border-radius: 2px;
+  border: 1px solid #dfe0e6;
+  padding-top: 15px;
+}
+
+/* 
+h5 {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding-bottom:0px
+} */
+
+#zutaten, #zubereitung {
+  border: 1px solid #ddd;
+
+}
+#btn-recipe-submit {
+  background-color: #537332;
+  color: white;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right:auto;
+  margin-left:auto;
+  width: 50%;
+  height: 50px;
+}
+
+#select {
+  style:none;
+}
+
+.btn-add, .btn-edit {
+  text-align:center
+}
+
+/* personalized page */
+
+#loggingout {
+  text-align: right;
+  margin-top:30px;
+}
+
+#loggingout a {
+  color: black;
+}
+
+.welcome-page {
+  width: 100%;
+  min-height: 1000px;
+  background-color: white;
+  padding: 30px 70px;
+  border-radius: 3px;
+  margin-bottom: 100px;
+}
+
+.welcome-recipe-img, .recipe-img{
+  max-width: 100%;
+}
+
+.headline-wrapper {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+
+.karussell-section h2 {
+  background-color:#537332;
+  color:white;
+  padding: 0px 20px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px){
+
+ .home-headline {
+   text-align:center;
+   width: 250px;
+ } 
+  .home-headline h1 {
+  font-size:40px;
+  }
+
+  .karussell-section h1 {
+    font-size:25px;
+  }
+
+  h1 {
+    font-size:25px;
+  }
+
+.welcome-page {
+  padding: 15px;
+}
+
+.karussell-section h2 {
+  font-size:20px;
+}
+
+.col-4 {
+  max-width:none;
+  padding:0px; 
+}
+
+.add-recipe, .edit-recipe {
+  padding: 10px 20px;
+}
+
+#rezepte-form .row {
+  margin-left: 0px;
+}
+
+#add-level, #add-duration, #add-gericht, #add-nutrition, #add-portions, #edit-level, #edit-duration, #edit-gericht, #edit-nutrition, #edit-portions {
+  width: 305px;
+}
+#btn-recipe-submit {
+  width: 100%;
+}
+.recipe-details {
+  padding: 10px 20px;
+}
+
+
+.recipe-meta > span {
+  padding: 5px 10px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.recipe-details h2 {
+  text-align:none;
+  font-size:20px;
+}
+
+.edit-recipe img {
+  max-width: 305px;
+}
+#rezepte {
+  margin-right: 0px;
+  margin-left:0px;
+}
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+  
+  
+   }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+/*# sourceMappingURL=style.css.map */

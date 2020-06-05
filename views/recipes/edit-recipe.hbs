@@ -1,0 +1,105 @@
+<div class="container">
+
+<div class="edit-recipe">
+
+<h1>Bearbeite das Rezept</h1>
+
+
+<form id="rezepte-form" action="/rezepte/{{recipe.id}}/bearbeiten" method="post" enctype="multipart/form-data">
+  <h5><label for="title">Rezeptname*</label></h5>
+  <input  id="title" type="text" name="title" value="{{recipe.title}}">
+
+  <h5> <label>Bilder hochladen </label> </h5>
+  <img src="{{recipe.image}}" height="250px">
+  <br>
+
+  <input type="file" name="photo">
+
+<div class="row">
+  <div class="col-4 select-wrapper">
+  <h5><label for="level">Schwierigkeitslevel*</label> </h5>
+   <select id="edit-level" name="level">
+    <option value="{{recipe.level}}"> {{recipe.level}}</option>
+    <option value="Easy Peasy">Easy Peasy</option>
+    <option value="Amateur Chef">Amateur Chef</option>
+    <option value="UltraPro Chef">UltraPro Chef</option>
+  </select>
+</div>
+
+<div class="col-4">
+  <h5> <label  for="duration">Zubereitungszeit</label></h5>
+  <input id="edit-duration" type="text" name="duration" value="{{recipe.duration}}">
+</div>
+
+
+
+<div class="col-4 select-wrapper">
+  <h5><label for="dishType">Gerichte*</label> </h5>
+  <select id="edit-gericht" name="dishType">
+    <option value="{{recipe.dishType}}">{{recipe.dishType}}</option>
+    <option value="Hauptspeise">Hauptspeise</option>
+    <option value="Vorspeise">Vorspeise</option>
+    <option value="Suppe">Suppe</option>
+    <option value="Frühstück">Frühstück</option>
+    <option value="Dessert">Dessert</option>
+    <option value="Salat">Salat</option>
+    <option value="Beilage">Beilage</option>
+    <option value="Spezielles">Spezielles</option>
+  </select>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-4">
+<h5> <label  for="nutrition">Ernährung</label></h5>
+<select id="edit-nutrition" name="nutrition">
+    <option value="{{recipe.nutrition}}">{{recipe.nutrition}}</option>
+    <option value="Vegan">Vegan</option>
+    <option value="Vegetarisch">Vegetarisch</option>
+    <option value="Fleisch">Fleisch</option>
+    <option value="Fisch">Fisch</option>
+
+  </select>
+</div>
+
+  <div class="col-4">
+  <h5> <label for="portions">Zutaten für Portionen:</label></h5>
+  <input id="edit-portions" type="number" name="portions" value="{{recipe.portions}}">
+</div>
+</div>
+
+
+  <h5> <label for="ingredients">Zutaten*</label> </h5>
+  <textarea rows="12" cols="0" id="zutaten" type="text" name="ingredients"
+    value="{{recipe.ingredients}}">{{recipe.ingredients}}</textarea>
+
+
+  <h5><label for="directions">Zubereitung*</label> </h5>
+
+  <textarea rows="12" cols="0" id="zubereitung" type="text" name="directions"
+    value="{{recipe.directions}}">{{recipe.directions}}</textarea>
+  
+<br>
+
+<p>*erforderliche Felder</p>
+
+<div class="btn-edit">
+  <button id="btn-recipe-submit" type="submit">Rezept bearbeiten</button>
+
+  </div>
+</form>
+
+<br>
+<br>
+
+
+
+<form action="/rezepte/{{this.id}}/entfernen" method="post"><button id="btn-rec-det" type="submit">Lösche das
+    Rezept</button></form>
+
+
+<a href="/rezepte"> zurück zur Rezeptübersicht</a>
+
+</div>
+</div>

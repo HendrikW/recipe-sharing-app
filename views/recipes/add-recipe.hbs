@@ -1,0 +1,88 @@
+<div class="container">
+
+<div class="add-recipe">
+<h1>Neues Rezept hochladen</h1>
+
+
+
+<form id="rezepte-form" action="/rezepte" method="post" enctype="multipart/form-data">
+ <h5> <label  for="title">Rezeptname*</label></h5>
+  <input id="title" type="text" name="title" placeholder=" z.B. Feldsalat mit Balsamico-Vinaigrette">
+<h5>  <label>Bilder hochladen </label> </h5>
+  <input type="file" name="photo">
+
+<div class="row">
+  <div class="col-4 select-wrapper">
+  <h5><label for="level">Schwierigkeitslevel*</label> </h5>
+  <select id="add-level" name="level">
+    <option value="Easy Peasy">Easy Peasy</option>
+    <option value="Amateur Chef">Amateur Chef</option>
+    <option value="UltraPro Chef">UltraPro Chef</option>
+
+  </select>
+</div>
+<div class="col-4">
+  <h5> <label  for="duration">Zubereitungszeit</label></h5>
+  <input id="add-duration" type="text" name="duration" placeholder=" z.B. 30 Minuten"> 
+</div>
+
+
+<div class="col-4 select-wrapper">
+  <h5><label for="dishType">Gerichte*</label> </h5>
+  <select id="add-gericht" name="dishType">
+    <option value="Hauptspeise">Hauptspeise</option>
+    <option value="Vorspeise">Vorspeise</option>
+    <option value="Suppe">Suppe</option>
+    <option value="Frühstück">Frühstück</option>
+    <option value="Dessert">Dessert</option>
+    <option value="Salat">Salat</option>
+    <option value="Beilage">Beilage</option>
+    <option value="Spezielles">Spezielles</option>
+
+  </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4">
+
+  <h5> <label  for="nutrition">Ernährung</label></h5>
+<select id="add-nutrition" name="nutrition">
+    <option value="Vegan">Vegan</option>
+    <option value="Vegetarisch">Vegetarisch</option>
+    <option value="Fleisch">Fleisch</option>
+    <option value="Fisch">Fisch</option>
+
+  </select>
+
+</div>
+
+  <div class="col-4">
+  <h5> <label  for="portions">Zutaten für Portionen:</label></h5>
+ <input id="add-portions" type="number" name="portions" placeholder=" z.B. 4">
+</div>
+</div>
+
+ <h5> <label for="ingredients">Zutaten*</label> </h5>
+<textarea rows="12" cols="0" id="zutaten" type="text" name="ingredients" placeholder="Füge hier die Zutatenliste ein. Achte darauf, dass jede Zutat in einer Zeile ist."></textarea>
+
+
+<h5><label for="directions">Zubereitung*</label> </h5>
+
+<textarea rows="12" cols="0" id="zubereitung" type="text" name="directions" placeholder="Beschreibe chronologisch als Text oder stichpunktartig, wie dein Rezept zubereitet wird."></textarea>
+
+<br>
+
+<p>*erforderliche Felder</p>
+
+<div class="btn-add">
+<button id="btn-recipe-submit" type="submit">Neues Rezept hochladen</button>
+</div>
+<br><br>
+  <p> Keine Sorge. Du kannst das Rezept später noch anpassen, wenn du etwas vergessen hast.</p>
+</form>
+
+<a href="/rezepte"> zurück zur Rezeptübersicht</a>
+</div>
+
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+
+
+<div class="row">
+
+<div id="signup-form" class="col-12">
+  <div id="signup-box">
+
+
+ 
+<h2>Willkommen bei HelloCook</h2>
+
+<p>Es erwarten dich wertvoll ausgewählte Rezepte. <br> Du kannst Rezepte teilen, die dir richtig gut schmecken <br> und neue Rezepte entdecken.</p>
+
+{{!-- Add E-Mail to the form  && Social Login with Facebook--}}
+
+<form action="/signup" method="POST" id="form-container">
+ <label for="email"></label>
+  <input id="email" type="email" name="email" placeholder="E-Mail">
+ 
+  <label id="input-text"for="username"></label> <br>
+  <input id="username" type="text" name="username" placeholder="Benutzername">
+
+  <label id="input-text" for="password"></label> <br>
+  <input id="password" type="password" name="password" placeholder="Passwort">
+
+
+  {{#if message}}
+    <div class="error-message">{{ message }}</div>
+  {{/if}}
+ 
+
+  <button id="btn-signup" type="submit">Jetzt registrieren</button>
+<br>
+
+<a href="/auth/google">Registrieren mit Google</a> <br>
+
+
+
+  <p>
+    Du hast bereits ein Konto?
+    <a href="/login">Anmelden</a>
+  </p>
+  
+</form>
+ </div>
+</div>
+</div>
+
+</div>
