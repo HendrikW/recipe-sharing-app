@@ -1,0 +1,100 @@
+<div class="container">
+
+<div class="recipe-details">
+      <h1>{{this.title}}</h1>
+
+{{#if this.author.username}}
+      <p>erstellt von {{this.author.username}}</p>
+
+{{/if}}
+      <div><img src="{{this.image}}" alt="recipe-image"></div>
+
+
+      <div class="recipe-meta">
+            {{#if this.level}}
+            <span> {{this.level}}</span>
+            {{/if}}
+
+            {{#if this.duration}}
+            <span>Zubereitungszeit: {{this.duration}}</span>
+            {{/if}}
+
+            <span>{{this.dishType}}</span>
+
+            {{#if this.nutrition}}
+            <span id="detail-nutrition"> {{this.nutrition}}</span>
+            {{/if}}
+
+
+      </div>
+
+      {{!-- <div class="container">
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+<div class="like">
+    <img src="../images/haende-und-gesten.svg" height="30px">
+    <p>Gefällt mir</p>
+    </div>
+
+<div class="comments">
+   <img src="../images/kommentare.svg" height="30px">
+    <p>Kommentieren</p>
+    </div>
+</div>
+    </div>
+</div> --}}
+      {{!-- Bewertungen --}}
+
+      {{!-- <h2>Zutaten: </h2> --}}
+      {{#if this.portions}}
+
+      <h2>Zutaten für {{this.portions}} Personen:</h2>
+      {{else}}
+      <h2>Zutaten: </h2>
+
+
+      {{/if}}
+
+      {{#each this.ingredients }}
+      <li>
+            {{this}}
+      </li>
+      {{/each}}
+      {{!-- {{this.ingredients}}</span> --}}
+
+      <h2>Zubereitung:</h2>
+      {{#each this.directions}}
+      <p>
+            {{this}}
+      </p>
+      {{/each}}
+
+
+
+      {{!-- <p> Dieses Rezept wurde von {{this.author}} am {{created..}} erstellt. </p> --}}
+
+
+      {{#if this.author}}
+
+      <a id="btn-rec-det" href='/rezepte/{{this.id}}/bearbeiten'> Bearbeite das Rezept</a>
+
+      <form action="/rezepte/{{this.id}}/entfernen" method="post"><button id="btn-rec-det" type="submit">Lösche das
+                  Rezept</button></form>
+
+      {{/if}}
+
+
+      <a href="/rezepte"> zurück zur Rezeptübersicht</a>
+
+</div>
+
+</div>
+
+{{!-- <h2 id="comment-h2">Kommentare</h2>
+<form id="comment-form">
+<label for="comments"></label> </h5>
+
+<textarea rows="5" cols="0" id="comments" type="text" name="comments" placeholder="Verfasse deinen Kommentar zu diesem Rezept."></textarea>
+
+<button type="submit">Senden</button>
+</form> --}}
